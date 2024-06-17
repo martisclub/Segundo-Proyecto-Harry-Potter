@@ -3,7 +3,7 @@
   padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none;
-  color: aliceblue;
+
 }
 
 body {
@@ -43,13 +43,14 @@ body {
   /*seccion intro*/
   
   #intro {
-    min-height: 100vh;
+    min-height: 130vh;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    background-image: url(../images/dining-room-5114247_1280.jpg);
+    background-image: url(../images/castillo-1.jpg);
     background-size: cover;
+    color: azure;
   }
 
   #intro  .titulo-pricipal{
@@ -69,11 +70,12 @@ body {
     min-height: 100vh;
     padding: 10px 0;
     margin: 5px 0;
-    background-color: rgb(52, 20, 209);
+    background-image: url(../images/dining-room-5114247_1280.jpg);
     background-size: cover;
   }
 
   .title-categorys{
+    color: azure;
     padding: 50px 0 ;
     margin: 40px 0 ;
     font-size: 50px;
@@ -94,6 +96,8 @@ body {
     text-align: center;
     margin:  -200px;
     padding: 0px;
+    color: azure;
+    text-decoration: none;
   }
 
   .card-casas,
@@ -106,7 +110,7 @@ body {
     border: 2px solid azure;
     border-radius: 150px;
     cursor: pointer;
-    transition: transform 1.5s ease;
+    transition: transform 1s ease;
   }
   
   .card-casas:hover,
@@ -121,9 +125,116 @@ body {
     border-radius:150px;
   }
 
-  
-    
+/*Seccion Casas*/
 
+#Houses{
+  min-height: 100vh;
+  padding: 10px 0;
+  margin: 5px 0;
+  background-image: url(../images/fondo\ casas\ nueva.jpg);
+  background-size: cover;
+}
+
+.title-casas{
+  color: azure;
+  padding: 20px 0;
+  margin: 10px 0;
+  font-size: 50px;
+}
+
+.cards-houses{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 20px;
+  margin: 80px 10px;
+  padding: 20px;
+  background-image: url(../images/hogwarts-8098986_640.jpg)
+  background-size: cover;
+}
+
+.Gryffindor,
+.Slytherin,
+.Ravenclaw,
+.Hufflepuff{
+  padding: 20px;
+  margin: 5px;
+  border: 1px solid rgba(239, 244, 244, 0.379);
+  border-radius: 20px;
+  text-align:center;
+  font-size: 22px;
+  font-weight: bolder;
+  color: azure;
+  transition: 1s transform;
+}
+
+.Gryffindor:hover,
+.Slytherin:hover,
+.Hufflepuff:hover,
+.Ravenclaw:hover {
+  transform: scale(1.2);
+}
+
+
+h3{
+  font-size: 35px;
+  text-decoration:underline;
+  padding-bottom: 20px;
+}
+
+.Gryffindor {
+  background-color: #46060f;
+  color: orange;
+}
+
+.Slytherin{
+background-color: #0e3928 ;
+color: black;
+}
+
+.Hufflepuff{
+background-color: #9e701a;
+color: rgb(64, 56, 56);
+}
+
+.Ravenclaw{
+  background-color: #062975;
+  color: azure;
+}
+
+/*Seccion Hechizos*/
+
+#spells{
+  min-height: 120vh;
+  color: azure;
+  padding: 20px;
+  margin: 5px 0;
+  background-image: url(../images/patronus.jpg);
+  background-size: cover;
+}
+
+.Hechizos h2{
+  font-size: 50px;
+  padding: 20px ;
+  margin-bottom: 20px;
+}
+
+.Hechizos p{
+font-size: 30px;
+padding: 20px;
+margin: 20px;
+text-align: left;
+}
+
+.Hechizos ul li{
+  color: #d1cfde;
+  font-size: 25px;
+  text-align: left;
+  font-style: italic;
+  font-weight: bolder;
+  letter-spacing: 1px;
+
+}
   footer {
     background-color: #343a40;
     color: white;
@@ -132,4 +243,5 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 20px;
   }
